@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Lexend Deca", sans-serif;
+    background-color: var(--Verydarkbluemain);
+    display: grid;
+    place-items: center;
+}
+
+:root{
+    --Verydarkbluemain: hsl(233, 47%, 7%);
+    --Darkdesaturated: hsl(244, 38%, 16%);
+    --Softviolet: hsl(277, 64%, 61%);
+    --White: hsl(0, 0%, 100%);
+    --Slightlytransparentwhitemain: hsla(0, 0%, 100%, 0.75);
+  --Slightltransparentwhitestat: hsla(0, 0%, 100%, 0.6);
+}
+/* start-preview */
+#stats .container{  
+    margin: 150px 200px 0px 0px;
+}
+#stats .container .content{
+    background-color: var(--Darkdesaturated);
+    border-radius:10px;
+    width: 800px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#stats .container .content .info {
+    padding-right:100px ;
+}
+#stats .container .content .info h1{
+    font-size: 30px;
+    font-weight: 700;
+    font-family:"Lexend Deca" ;
+    color: var(--White);
+    margin:20px 0px 40px 50px;
+}
+#stats .container .content .info h1 mark{
+    background-color: transparent;
+    color: var(--Softviolet);
+}
+#stats .container .content .info > p{
+    font-size: 15px;
+    font-weight: 500px;
+    font-family:"Lexend Deca";
+    margin: 0px 0px 40px 50px;
+    color: var(--Slightlytransparentwhitemain);
+}
+#stats .container .content .info .row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    margin-left: 10px;
+    
+}
+#stats .container .content .info .row h2{
+    font-size: 20px;
+    color: var(--White);
+}
+#stats .container .content .info .row p{
+    font-size: 12px;
+    font-weight: 400;
+    font-family:"Lexend Deca";
+    color: var(--Slightlytransparentwhitemain);
+    text-transform: capitalize;
+    margin:10px 0px 0px 15px;
+}
+#stats .container .content .info .row .las-p{
+    margin-left: 0px;
+}
+#stats .container .content picture{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#stats .container .content picture img{
+object-fit: cover;
+width: 160%;
+height: 100%;
+border-top-right-radius: 10px;
+border-bottom-right-radius:10px ;
+}
+#stats .container .content picture div{
+    width: 160%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color:hsla(277, 64%, 61%, 0.568);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px ;
+}
+
+
+
+/* end-preview */
+/* media-query */
+@media(max-width:375px){
+    #stats .container{  
+        margin: 100px 0px 20px 0px;
+    }    
+    #stats .container .content{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 350px;
+        height:540px;
+        text-align: center;
+        padding-bottom: 150px;
+    }
+    #stats .container .content .info {
+        padding-right:0px ;
+    }
+    #stats .container .content .info .row .col{
+        padding: 20px 0px;
+    }
+    #stats .container .content .info h1{
+        font-size: 20px;
+        font-weight: 700;
+        margin:40px 0px 0px 0px;
+    
+    }
+    #stats .container .content picture img{
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 10px;
+        border-top-left-radius:10px ;
+        }
+        #stats .container .content picture div{
+            width: 100%;
+            height: 100%;
+            border-top-right-radius: 10px;
+            border-top-left-radius:10px ;
+        }
+        #stats .container .content .info > p{
+            font-size: 15px;
+            margin:20px 30px 20px 50px;
+}
+      #stats .container .content .info .row{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 30px;
+    
+}
+       
+       
+
+}
